@@ -1,15 +1,20 @@
 #! /bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
-
+#===============================================================================================
+#   System Required:  CentOS Debian or Ubuntu (32bit/64bit)
+#   Description:  A tool to auto-compile & install frps on Linux
+#   Author: Clang
+#   Intro:  http://koolshare.cn/forum-72-1.html
+#===============================================================================================
 program_name="frps"
 version="1.8.5"
 str_program_dir="/usr/local/${program_name}"
 program_init="/etc/init.d/${program_name}"
 program_config_file="frps.ini"
 ver_file="/tmp/.frp_ver.sh"
-program_version_link="https://github.com/mumu2511/abc/blob/main/frps/version.sh"
-str_install_shell=https://github.com/mumu2511/abc/blob/main/frps/install-frps.sh
+program_version_link="http://cp.tbmuhe.top/version.sh"
+str_install_shell=http://cp.tbmuhe.top/install-frps.sh
 shell_update(){
     fun_clangcn "clear"
     echo "Check updates for shell..."
